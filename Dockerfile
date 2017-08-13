@@ -14,6 +14,7 @@ ENV OAUTH_ADDITIONAL_PARAMS "**None**"
 ENV SWAGGER_JSON "/app/swagger.json"
 ENV PORT 80
 
+RUN apk update
 RUN apk add --update nginx
 RUN mkdir -p /run/nginx
 
